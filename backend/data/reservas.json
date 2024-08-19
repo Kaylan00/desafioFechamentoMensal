@@ -1,0 +1,80 @@
+[
+    {
+        "reservation_id": 1,
+        "property_id": 100,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 1000,
+        "cleaning_value": 250,
+        "ota_fee": 0.15,
+        "property_fee": 0.7,
+        "host_fee": 0.08,
+        "cash_date": "2024-06-01",
+        "status": "active"
+    },
+    {
+        "reservation_id": 2,
+        "property_id": 100,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 500,
+        "cleaning_value": 250,
+        "ota_fee": 0.12,
+        "property_fee": 0.8,
+        "host_fee": 0.08,
+        "cash_date": "2024-06-25",
+        "status": "active"
+    },
+    {
+        "reservation_id": 3,
+        "property_id": 101,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 800,
+        "cleaning_value": 200,
+        "ota_fee": 0.15,
+        "property_fee": 0.7,
+        "host_fee": 0.08,
+        "cash_date": "2024-07-05",
+        "status": "active"
+    },
+    {
+        "reservation_id": 4,
+        "property_id": 100,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 1000,
+        "cleaning_value": 230,
+        "ota_fee": 0.15,
+        "property_fee": 0.8,
+        "host_fee": 0.09,
+        "cash_date": "2024-07-15",
+        "status": "active"
+    },
+    {
+        "reservation_id": 5,
+        "property_id": 100,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 500,
+        "cleaning_value": 250,
+        "ota_fee": 0.12,
+        "property_fee": 0.8,
+        "host_fee": 0.08,
+        "cash_date": "2024-06-20",
+        "status": "canceled"
+    },
+    {
+        "reservation_id": 6,
+        "property_id": 101,
+        "ota_id": 1,
+        "host_id": 10,
+        "reservation_value": 500,
+        "cleaning_value": 250,
+        "ota_fee": 0.12,
+        "property_fee": 0.8,
+        "host_fee": 0.08,
+        "cash_date": "2024-07-25",
+        "status": "active"
+    }
+]
