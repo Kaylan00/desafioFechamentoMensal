@@ -15,7 +15,26 @@ A aplicação é composta por um frontend interativo e um backend que processa o
 
 ### Backend:
 - **Python (Flask)**: Framework leve para construção de APIs. O Flask é utilizado para criar endpoints que recebem as requisições do frontend, processam os dados e retornam os resultados.
+## Endpoints da API
 
+- **POST /calcular**
+  - **Descrição:** Recebe o ID da propriedade e o mês no formato AAAA-MM, realiza os cálculos das comissões e retorna um JSON com os valores calculados.
+  - **Corpo da Requisição:**
+    ```json
+    {
+      "property_id": 100,
+      "mes": "2024-06"
+    }
+    ```
+  - **Exemplo de Resposta:**
+    ```json
+    {
+      "ota_commission": 150.0,
+      "host_commission": 298.0,
+      "property_commission": 420.0,
+      "seazone_commission": 132.0
+    }
+    ```
 ## Funcionalidades
 
 ### Interface de Usuário:
