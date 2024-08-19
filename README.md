@@ -45,3 +45,42 @@ A aplicação é composta por um frontend interativo e um backend que processa o
    ```bash
    git clone https://github.com/seu-usuario/fechamento-mensal-seazone.git
    cd fechamento-mensal-seazone
+2. **Configuração do Backend:**
+   - Navegue até a pasta `backend`.
+   - Instale as dependências necessárias usando o comando:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Execute o servidor Flask:
+     ```bash
+     python app.py
+     ```
+
+3. **Configuração do Frontend:**
+   - Abra o arquivo `index.html` localizado na pasta `frontend` em seu navegador.
+
+4. **Utilização:**
+   - Selecione um ID de propriedade e o mês desejado.
+   - Clique em "Calcular" para visualizar as comissões.
+
+## Estrutura do Projeto
+
+- **backend/**:
+  - `app.py`: Arquivo principal do backend que define as rotas e lógica de cálculo das comissões.
+  - `utils.py`: Funções auxiliares para cálculo das comissões.
+  - `data/reservas.json`: Arquivo JSON com os dados das reservas utilizadas nos cálculos.
+
+- **frontend/**:
+  - `index.html`: Arquivo HTML principal contendo a interface do usuário.
+  - `styles.css`: Arquivo CSS para estilização da interface.
+  - `app.js`: Arquivo JavaScript que contém a lógica de interação com o usuário, requisições ao backend e exibição dos resultados.
+  - `img/`: Pasta com as imagens utilizadas na interface.
+
+## Observações
+
+- **Responsividade:** A aplicação foi desenvolvida para ser responsiva e funcionar bem em diferentes dispositivos, incluindo smartphones e tablets.
+- **Feedback ao Usuário:** Foram implementadas mensagens claras para guiar o usuário em caso de erros, como a ausência de seleção de um mês.
+
+## Conclusão
+
+Este projeto demonstra uma integração simples e eficiente entre um frontend interativo e um backend leve, utilizando tecnologias modernas e práticas recomendadas para desenvolvimento web. A solução é ideal para calcular e visualizar dados financeiros de maneira clara e acessível.
