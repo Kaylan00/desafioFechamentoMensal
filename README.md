@@ -1,6 +1,3 @@
-
-Peço desculpas pela confusão anterior. Aqui está o conteúdo adaptado para um arquivo README.md, utilizando a sintaxe apropriada para Markdown e sem os elementos de código HTML:
-
 Fechamento Mensal - Seazone
 Este projeto é uma aplicação web que permite calcular e visualizar o fechamento mensal de uma propriedade gerenciada pela Seazone. A aplicação exibe as comissões a serem distribuídas para diferentes partes envolvidas (OTA, Anfitrião, Propriedade e Seazone) com base em dados de reservas fornecidos.
 
