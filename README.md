@@ -58,31 +58,34 @@ A aplicação é composta por um frontend interativo e um backend que processa o
 - Flask (`pip install flask`)
 - Chart.js (incluído via CDN no HTML)
 
-### Passos para Executar:
+## Passos para Executar:
 
-1. **Clone o Repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/fechamento-mensal-seazone.git
-   cd fechamento-mensal-seazone
-2. **Configuração do Backend:**
-   - Navegue até a pasta `backend`.
-   - Instale as dependências necessárias usando o comando:
-     ```bash
-     pip install -r requirements.txt
-     ```
-   - Execute o servidor Flask:
-     ```bash
-     python app.py
-     ```
+### 1. Clone o Repositório:
+```bash
+git clone https://github.com/seu-usuario/fechamento-mensal-seazone.git
+cd fechamento-mensal-seazone
+```
+### 2. Configuração do Backend:
+- Navegue até a pasta backend.
+```bash
+cd backend
+```
+- Instale as dependências necessárias:
+```bash
+pip install Flask
+pip install flask-cors
+```
+- Execute o servidor Flask:
+```bash
+python app.py
+```
+### 3. Configuração do Frontend:
+- Abra o arquivo index.html localizado na pasta frontend em seu navegador.
+### 4. Utilização:
+- Selecione um ID de propriedade e o mês desejado.
+- Clique em "Calcular" para visualizar as comissões.
 
-3. **Configuração do Frontend:**
-   - Abra o arquivo `index.html` localizado na pasta `frontend` em seu navegador.
-
-4. **Utilização:**
-   - Selecione um ID de propriedade e o mês desejado.
-   - Clique em "Calcular" para visualizar as comissões.
-
-## Estrutura do Projeto
+### Estrutura do Projeto
 
 - **backend/**:
   - `app.py`: Arquivo principal do backend que define as rotas e lógica de cálculo das comissões.
