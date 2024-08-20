@@ -4,7 +4,6 @@ function calcularComissoes() {
     const resultados = document.getElementById('resultados');
     const loadingOverlay = document.getElementById('loading-overlay');
 
-
     if (!mes) {
         resultados.style.display = 'block'; 
         resultados.innerHTML = `<p style="color: red;">Por favor, selecione um mês válido.</p>`;
@@ -41,10 +40,10 @@ function calcularComissoes() {
                 datasets: [{
                     label: 'Comissões em R$',
                     data: [
-                        data.ota_commission,
-                        data.host_commission,
-                        data.property_commission,
-                        data.seazone_commission
+                        parseFloat(data.ota_commission.replace("R$", "").replace(".", "").replace(",", ".")),
+                        parseFloat(data.host_commission.replace("R$", "").replace(".", "").replace(",", ".")),
+                        parseFloat(data.property_commission.replace("R$", "").replace(".", "").replace(",", ".")),
+                        parseFloat(data.seazone_commission.replace("R$", "").replace(".", "").replace(",", "."))
                     ],
                     backgroundColor: [
                         'rgba(54, 162, 235, 0.2)', 
@@ -80,7 +79,6 @@ function calcularComissoes() {
                     }
                 }
             }
-            
         });
     })
     .catch(error => {
@@ -89,9 +87,4 @@ function calcularComissoes() {
         resultados.innerHTML = `<p style="color: red;">Ocorreu um erro ao calcular as comissões. Tente novamente.</p>`;
         console.error('Erro:', error);
     });
-}
-
-
-function formatarValor(valor) {
-    return valor.toFixed(2).replace('.', ',');
 }
